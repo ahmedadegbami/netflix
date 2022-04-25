@@ -11,9 +11,8 @@ function ErrorMsg() {
           <p>
           Something went wrong. Please try again.
           </p>
-          <hr />
           <div className="d-flex justify-content-end">
-            <Button onClick={() => setShow(false)} variant="outline-success">
+            <Button onClick={() => setShow(false)} variant="outline-danger">
               Close
             </Button>
           </div>

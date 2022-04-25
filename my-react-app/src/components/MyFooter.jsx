@@ -20,6 +20,7 @@ const MyFooter = () => ( <Container>
   </div>
 </Col>
 </Row>
+<Col md={1}/>
 <Row md={6}>
 <Col md={12}>
 <div>
@@ -33,6 +34,7 @@ const MyFooter = () => ( <Container>
 </div>
   </Col>
 </Row>
+<Col md={1}/>
 <Row md={6}>
 <Col md={12}>
   <div>
@@ -46,6 +48,7 @@ const MyFooter = () => ( <Container>
  </div>
 </Col>
 </Row>
+<Col md={1}/>
 <Row md={6}>
 <Col md={12}>
 <div>
@@ -61,12 +64,12 @@ const MyFooter = () => ( <Container>
 </Row>
 </Row>
 <Row className="justify-content-md-center">
-<Col md={12}>
+<Col md={10}>
   <br />
   <Button variant="outline-light">Service Code</Button>{' '}
 </Col>
-<Col md={12}>
-  <p id="footer-text" className="">
+<Col md={10}>
+  <p id="footer-text" className="justify-content-md-center">
     copy 1997-2019 Netflix, Inc.
   </p>
 </Col>
