@@ -7,9 +7,10 @@ class CarouselItem extends Component {
 
         return(
 
-            <Col md={2}>
+            <Col col={2}>
         <Card>
           <img
+          width="200px"
             src={this.props.movie.Poster}
             className="card-img-top"
             alt="..."
