@@ -63,5 +63,5 @@ const MyFooter = () => ( <Container>
 </Col>
 </Row>
 </Container>
-)
+);
 export default MyFooter
