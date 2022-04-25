@@ -11,6 +11,7 @@ class CarouselItem extends Component {
         <Card>
           <img
           width="200px"
+          height="500px"
             src={this.props.movie.Poster}
             className="card-img-top"
             alt="..."
