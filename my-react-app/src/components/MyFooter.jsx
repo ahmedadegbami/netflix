@@ -1,53 +1,62 @@
 import React from "react"
 import { Col, Row, Container, Button } from "react-bootstrap"
+import  '../App.css';
 
 const MyFooter = () => ( <Container>
     <Row md={12} className="justify-content-md-center">
-      <Row md={2}>
-<Col>
+      <Row md={6}>
+<Col md={12}>
+<div>
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Audio and Subtitles</a>
-</Col>
-<Col>
+  </div>
+  <div>
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Audio Description</a>
-</Col>
-<Col>
+  </div>
+  <div>
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Help Center</a>
-</Col>
-<Col>
+  </div>
+  <div>
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Gift Cards</a>
+  </div>
 </Col>
 </Row>
-<Row md={2}>
-<Col>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Media Center</a>
-</Col>
-<Col>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Investor Relations</a>
-</Col>
-<Col>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Jobs</a>
-</Col>
+<Row md={6}>
+<Col md={12}>
+<div>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Media Center</a>
+</div>
+<div>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Investor Relations</a>
+</div>
+<div>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Jobs</a>
+</div>
+  </Col>
 </Row>
-<Row md={2}>
-<Col>
+<Row md={6}>
+<Col md={12}>
+  <div>
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Terms of Use</a>
-</Col>
-<Col>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Privacy</a>
-</Col>
-<Col>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CarLegal Noticesds</a>
+  </div>
+<div>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Privacy</a>
+</div>
+ <div>
+ <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CarLegal Noticesds</a>
+ </div>
 </Col>
 </Row>
-<Row md={2}>
-<Col>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Cookie Preferences</a>
-</Col>
-<Col>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Corporate Information</a>
-</Col>
-<Col>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contact Us</a>
+<Row md={6}>
+<Col md={12}>
+<div>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Cookie Preferences</a>
+</div>
+<div>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Corporate Information</a>
+</div>
+ <div>
+ <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contact Us</a>
+ </div>
 </Col>
 </Row>
 </Row>
@@ -57,7 +66,7 @@ const MyFooter = () => ( <Container>
   <Button variant="outline-light">Service Code</Button>{' '}
 </Col>
 <Col md={12}>
-  <p id="footer-text" class="">
+  <p id="footer-text" className="">
     copy 1997-2019 Netflix, Inc.
   </p>
 </Col>
