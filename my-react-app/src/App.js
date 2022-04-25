@@ -11,7 +11,7 @@ function App() {
       <MyNav />
       <HeadingNavbar />
       <MyCarousel heading="Harry Potter" movie="Harry Potter" />
-      <MyCarousel heading="Fast and the Furious" movie="Fast and the Furious" />
+      <MyCarousel heading="James Bond" movie="James Bond" />
       <MyCarousel heading="The Lord of the Rings" movie="The Lord of The Rings" />
       <MyFooter />
 
