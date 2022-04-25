@@ -18,8 +18,11 @@ class MyCarousel extends Component {
 
   fetchData = async () => {
     try {
+
+        const selectedMovie = this.props.movie
+
       const response = await fetch(
-        "http://www.omdbapi.com/?apikey=6e593066&s=harry%20potter"
+        "http://www.omdbapi.com/?apikey=6e593066&s=" + selectedMovie
       );
       if (response.ok) {
         const body = await response.json();
