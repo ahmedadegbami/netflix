@@ -1,12 +1,10 @@
 import React, { Component } from "react";
+import "bootstrap-icons/font/bootstrap-icons.css"
+
 
 import {
   Nav,
   Navbar,
-  Form,
-  Button,
-  FormControl,
-  DropdownButton,
   Dropdown,
 } from "react-bootstrap";
 
@@ -24,23 +22,28 @@ class HeadingNavbar extends Component {
             className="justify-content-between"
           >
             <Nav>
-              <DropdownButton
-                id="dropdown-basic-button"
-                title="Genres"
-                variant="secondary"
+            <Dropdown>
+              <Dropdown.Toggle
                 style={{
                   backgroundColor: "black",
-                  border: "none",
+                  border: "1px solid white",
                 }}
+                id="dropdown-basic-button"
+                className="p-1"
               >
+                Genres
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
                 <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                 <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-              </DropdownButton>
+              </Dropdown.Menu>
+            </Dropdown>
             </Nav>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link mx-3">
+                <a class="nav-link mx-3" href="#hello">
                   <i class="bi bi-filter-square-fill"></i>
                   <i class="bi bi-dice-4"></i>
                 </a>
@@ -54,3 +57,6 @@ class HeadingNavbar extends Component {
 }
 
 export default HeadingNavbar;
+
+
+            

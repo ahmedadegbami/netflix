@@ -4,12 +4,13 @@ import { Navbar, Dropdown, Nav } from "react-bootstrap";
 import netflix from "../Images/netflix_logo.png";
 import dropdown from "../Images/dropdown.png";
 
+
 class MyNav extends Component {
   render() {
     return (
       <div>
         <Navbar className="navbar navbar-expand-lg navbar-dark dark-netflix d-flex">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="#hello">
             <img src={netflix} alt="netflix-logo" width="145" height="60" />
           </a>
 
@@ -17,21 +18,23 @@ class MyNav extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">TV Shows</Nav.Link>
-              <Nav.Link href="#link">Movies</Nav.Link>
-              <Nav.Link href="#link">Recently Added</Nav.Link>
-              <Nav.Link href="#link">My List</Nav.Link>
+              <Nav.Link href="#shows">TV Shows</Nav.Link>
+              <Nav.Link href="#movies">Movies</Nav.Link>
+              <Nav.Link href="#recent">Recently Added</Nav.Link>
+              <Nav.Link href="#list">My List</Nav.Link>
             </Nav>
 
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link"></a>
+                <a className="nav-link" href="#comedy">
+                <i class="bi bi-search"></i>
+                </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">KIDS</a>
+                <a className="nav-link" href="#kids">KIDS</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">
+                <a className="nav-link" href="#hello">
                   <i className="bi bi-bell"></i>
                 </a>
               </li>

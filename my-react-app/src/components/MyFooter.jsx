@@ -1,8 +1,8 @@
 import React from "react"
-import { Col, Row, Container, Button } from "react-bootstrap"
+import { Col, Row, Button } from "react-bootstrap"
 import  '../App.css';
 
-const MyFooter = () => ( <Container>
+const MyFooter = () => ( <footer>
     <Row md={12} className="justify-content-md-center">
       <Row md={6}>
 <Col md={12}>
@@ -74,6 +74,6 @@ const MyFooter = () => ( <Container>
   </p>
 </Col>
 </Row>
-</Container>
+</footer>
 );
 export default MyFooter

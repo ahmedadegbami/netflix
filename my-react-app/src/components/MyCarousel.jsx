@@ -5,7 +5,7 @@ import CarouselRow from './CarouselRow'
 class MyCarousel extends Component {
 
     state = {
-        hpMovies: []
+        movies: []
     }
 
     componentDidMount = () => {
@@ -21,7 +21,7 @@ class MyCarousel extends Component {
                 console.log(body)
 
                 this.setState({
-                    hpMovies: body.Search
+                    movies: body.Search
                 })
 
             } else {
@@ -41,12 +41,13 @@ class MyCarousel extends Component {
             <>
 <h2>{this.props.heading}</h2>
             <Carousel>
-            {this.state.hpMovies.map(movie => (
                     <Carousel.Item>
-                <CarouselRow movie={movie} />
-                </Carousel.Item>
-                    )
-            )}
+            {this.state.movies.map(movie => (
+                        <CarouselRow movies={this.state.movies} />
+
+                        )
+                        )}
+                        </Carousel.Item>
             </Carousel>
   </>
 
