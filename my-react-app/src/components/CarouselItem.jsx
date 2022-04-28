@@ -1,25 +1,23 @@
-import { Component } from "react";
-import {Col, Card} from 'react-bootstrap'
+import { Col, Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-class CarouselItem extends Component {
-
-    render() {
-
-        return(
-
-            <Col col={2}>
-        <Card>
-          <img
+const CarouselItem = (props) => {
+  return (
+    <Col col={2}>
+      <Card>
+        <img
           width="200px"
           height="500px"
-            src={this.props.movie.Poster}
-            className="card-img-top"
-            alt="..."
-          />
-        </Card>
+          src={props.movie.Poster}
+          className="card-img-top"
+          alt="..."
+        />
+        <Link to={"/details/" + props.movie.imdbID}>
+          <Button>View</Button>
+        </Link>
+      </Card>
     </Col>
-        )
-    }
-}
+  );
+};
 
-export default CarouselItem
+export default CarouselItem;
