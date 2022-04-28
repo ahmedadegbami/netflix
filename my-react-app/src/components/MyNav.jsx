@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Dropdown, Nav } from "react-bootstrap";
 import netflix from "../Images/netflix_logo.png";
 import dropdown from "../Images/dropdown.png";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const MyNav = () => {
   return (
