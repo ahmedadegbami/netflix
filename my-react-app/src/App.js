@@ -1,9 +1,8 @@
 import "./App.css";
 import MyNav from "./components/MyNav";
 import HeadingNavbar from "./components/HeadingNavbar";
-import MyCarousel from "./components/MyCarousel";
 import MyFooter from "./components/MyFooter";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CarouselGroup from "./components/CarouselGroup";
 import TVshows from "./components/TVshows";
 import MoviesDetails from "./components/MoviesDetails";
